@@ -23,8 +23,11 @@ export class Categories extends Component{
         ];
 
         const element = categories.map((category) =>
-            (<li className="category-item" key={category.name}>{this.props.image && category.image}
-                <a className="category-link" href="/">{category.name}</a>
+            (<li className="category-item" key={category.name}>
+                <a className="category-link" href="/">
+                    {this.props.image && category.image}
+                    <span>{category.name}</span>
+                </a>
             </li>)
         );
     

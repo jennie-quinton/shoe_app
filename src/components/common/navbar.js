@@ -7,7 +7,7 @@ export class NavBar extends Component{
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
                     <div className="navbar-header">
-                        <a className="navbar-brand" href="/">Golden Shoe Logo</a>
+                        <a className="navbar-brand" href="/">Golden Shoe</a>
                     </div>
                     <div className="" id="navbar">
                         <ul className="nav navbar-nav">
