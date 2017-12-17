@@ -17,10 +17,15 @@ export class Slider extends Component{
         var slideWidth = li.width();
         var slideHeight = li.height();
         var sliderUlWidth = slideCount * slideWidth;
+        var _this = this;        
         
-        $(this.state.parent + ' #slider').css({ width: slideWidth, height: slideHeight });
+        $(this.state.parent + ' #slider').css({ width: "750px", height: slideHeight });
         $(this.state.parent + ' #slider ul').css({ width: sliderUlWidth });
         $(this.state.parent + ' #slider ul li:last-child').prependTo(this.state.parent + ' #slider ul');
+
+        setInterval(function () {
+            _this.handleRightClick();
+        }, 5000);
     }
 
     handleLeftClick() {
