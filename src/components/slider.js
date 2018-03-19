@@ -52,6 +52,19 @@ export class Slider extends Component{
         });
     }
 
+    // handleClick(direction) {
+    //     const slideWidth = $(this.state.parent + ' #slider ul li').width();   
+    //     var _this = this;
+    //     var childElement = direction == 'right' ? 'first-child' : 'last-child';
+        
+    //     $(_this.state.parent + ' #slider ul').animate({
+    //         left: - slideWidth
+    //     }, 200, function () {
+    //         $(_this.state.parent + ' #slider ul li:' + childElement).appendTo(_this.state.parent + ' #slider ul');
+    //         $(_this.state.parent + ' #slider ul').css('left', '');
+    //     });
+    // }
+
     render(){
         return (
             <div className={"slider-container slider-container-"+this.props.type}>
