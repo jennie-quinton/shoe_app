@@ -54,8 +54,8 @@ export class Slider extends Component{
 
     handleClick(direction) {
         const slideWidth = $(this.state.parent + ' #slider ul li').width();   
-        var _this = this;
-        var childElement = direction == 'right' ? 'first-child' : 'last-child';
+        let _this = this;
+        const childElement = direction == 'right' ? 'first-child' : 'last-child';
         
         $(_this.state.parent + ' #slider ul').animate({
             left: - slideWidth
