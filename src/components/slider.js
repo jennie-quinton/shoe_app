@@ -39,18 +39,18 @@ export class Slider extends Component{
             $(_this.state.parent + ' #slider ul').css('left', '');
         });
     }
-
     handleRightClick() {
-        const slideWidth = $(this.state.parent + ' #slider ul li').width();   
+        const slideWidth = $(this.state.parent + ' #slider ul li').width()*2;   
         var _this = this;
         
         $(_this.state.parent + ' #slider ul').animate({
             left: - slideWidth
-        }, 200, function () {
+        }, 400, function () {
             $(_this.state.parent + ' #slider ul li:first-child').appendTo(_this.state.parent + ' #slider ul');
             $(_this.state.parent + ' #slider ul').css('left', '');
         });
     }
+
 
     handleClick(direction) {
         const slideWidth = $(this.state.parent + ' #slider ul li').width();   
